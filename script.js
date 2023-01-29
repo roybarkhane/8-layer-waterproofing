@@ -4,23 +4,102 @@ function printDocument() {
     document.body.innerHTML = `<main>${document.querySelector("main").innerHTML}</main>`;
     window.print();
 }
+function r3e(){
+    const rate3msg = document.getElementById("rate3msg");
+    const rate3 = document.getElementById('rate3');
+    
+    if(rate3.value<35){
+        rate3msg.innerHTML=`rate for 3 Layer can not be less than 35`;
+        rate3msg.classList.remove("success");
+        rate3msg.classList.add('fail');
+        return false;
+    }else{
+        rate3msg.innerHTML=""
+        rate3msg.classList.remove('fail');
+        rate3.classList.add('success');
+        return true;
+    } 
+}
+function r4e(){
+    const rate4msg = document.getElementById("rate4msg");
+    const rate4 = document.getElementById('rate4');
+    
+    if(rate4.value<45){
+        rate4msg.innerHTML=`rate for 4 Layer can not be less than 45`;
+        rate4msg.classList.remove("success");
+        rate4msg.classList.add('fail');
+        return false;
+    }else{
+        rate4msg.innerHTML=""
+        rate4msg.classList.remove('fail');
+        rate4.classList.add('success');
+        return true;
+    } 
+}
+function r5e(){
+    const rate5msg = document.getElementById("rate5msg");
+    const rate5 = document.getElementById('rate5');
+    
+    if(rate5.value<55){
+        rate5msg.innerHTML=`rate for 5 Layer can not be less than 55`;
+        rate5msg.classList.remove("success");
+        rate5msg.classList.add('fail');
+        return false;
+    }else{
+        rate5msg.innerHTML=""
+        rate5msg.classList.remove('fail');
+        rate5.classList.add('success');
+        return true;
+    } 
+}
+function r8e(){
+    const rate8msg = document.getElementById("rate8msg");
+    const rate8 = document.getElementById('rate8');
+    
+    if(rate8.value<70){
+        rate8msg.innerHTML=`rate for 8 Layer can not be less than 70`;
+        rate8msg.classList.remove("success");
+        rate8msg.classList.add('fail');
+        return false;
+    }else{
+        rate8msg.innerHTML=""
+        rate8msg.classList.remove('fail');
+        rate8.classList.add('success');
+        return true;
+    } 
+}
+
+function Validate() {
+  
+
+    if (!r3e()||!r4e()||!r5e()||!r8e()) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
 f.addEventListener('submit', (e) => {
     e.preventDefault();
     const ab = document.getElementById("browser").value;
     const name = document.getElementById('name').value;
     const add = document.getElementById("address").value;
     const feet = document.getElementById("feet").value;
+    const rate3 = document.getElementById('rate3').value;
+    const rate4 = document.getElementById('rate4').value;
     const rate8 = document.getElementById('rate8').value;
-    document.title=ab+''+name+' Giant 8 Layer Quote';
-    const date = new Date();
-    const print = document.createElement('button');
-    print.classList.add('button');
-    print.textContent = 'print';
-    const btnsection = document.querySelector('.btn');
-    btnsection.innerHTML = "";
-    btnsection.appendChild(print);
-    print.addEventListener('click', printDocument);
-    document.querySelector("main").innerHTML = `
+    const rate5 = document.getElementById('rate5').value;
+    document.title = ab + '' + name + ' Giant Quote';
+    if (Validate()) {
+        const date = new Date();
+        const print = document.createElement('button');
+        print.classList.add('button');
+        print.textContent = 'print';
+        const btnsection = document.querySelector('.btn');
+        btnsection.innerHTML = "";
+        btnsection.appendChild(print);
+        print.addEventListener('click', printDocument);
+        document.querySelector("main").innerHTML = `
     <div class="logo"><img src="logo.png" alt=""></div>
 <h2 class="company-name">
 Giant Waterproofing Company
