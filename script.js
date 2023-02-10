@@ -73,7 +73,7 @@ tr:nth-child(even) {
   </tr>
   <tr>
     <td><h2>8 Layer Working</h2>
-    <b>(12 Year Warranty)<b></td>
+    <b>(8 Year Warranty)<b></td>
     <td><b><span class="sqfit"> ${feet} </span>&times;<span class="rate"> ${rate8} </span><b></td>
     <td><b><span class="total"><h2>&#x20B9;${feet * rate8 * 118 / 100}</span></h2><b>
 (18 % GST Including)</td>
@@ -198,7 +198,7 @@ tr:nth-child(even) {
                 
 </li>
             </ol>
-            <h4 style="border:1px solid blue; padding: 20px; margin-top:20px;">Warranty : 12 Years (Twelve Years) (for 8 Layer Waterproofing Service  ) <b>T&C Apply</b>
+            <h4 style="border:1px solid blue; padding: 20px; margin-top:20px;">Warranty : 8 Years (Eight Years) (for 8 Layer Waterproofing Service  ) <b>T&C Apply</b>
                 </h4>
 
 
