@@ -21,7 +21,7 @@ f.addEventListener('submit', (e) => {
     btnsection.appendChild(print);
     print.addEventListener('click', printDocument);
     document.querySelector("main").innerHTML = `
-    <div class="logo"><img src="logo.png" alt=""></div>
+    <div class="logo"><img src="logo.svg" alt=""></div>
 <h2 class="company-name">
 Giant Waterproofing Company
 </h2>
@@ -73,10 +73,9 @@ tr:nth-child(even) {
   </tr>
   <tr>
     <td><h2>8 Layer Working</h2>
-    <b>(8 Year Warranty)<b></td>
+    <b>(12 Year Warranty)<b></td>
     <td><b><span class="sqfit"> ${feet} </span>&times;<span class="rate"> ${rate8} </span><b></td>
-    <td><b><span class="total"><h2>&#x20B9;${feet * rate8 * 118 / 100}</span></h2><b>
-(18 % GST Including)</td>
+    <td><b><span class="total"><h2>&#x20B9;${feet * rate8}</span></h2><b></td>
   </tr>
   
 </table>
@@ -152,7 +151,7 @@ tr:nth-child(even) {
 <p class="Rate-details">
     Rs <strong class="rate">${rate8}</strong> per sq fit.(Rates are inclusive Chemicals, mechanical tools, Labor, & Supervision etc)
 </p>
-<h2 class="total-amount" style="border: 1px solid blue; display:inline-block; padding: 10px;">Total Amount: <span class="sqfit"> ${feet} </span>&times;<span class="rate"> ${rate8} </span>=<span class="total">&#x20B9;${feet * rate8 * 118 / 100} Cost of 8 layer waterproofing</span></h2>
+<h2 class="total-amount" style="border: 1px solid blue; display:inline-block; padding: 10px;">Total Amount: <span class="sqfit"> ${feet} </span>&times;<span class="rate"> ${rate8} </span>=<span class="total">&#x20B9;${feet * rate8} Cost of 8 layer waterproofing</span></h2>
 
 <h3 style="color: red; margin: 50px 0; ">Note:</h3>
 <p style="border:1px solid red; padding:15px;">Cement must be provided by customer as per requirement</p>
@@ -209,13 +208,14 @@ tr:nth-child(even) {
 
 
 
+   
     <h2>Terms and Conditions</h2>
     <p>
         <dl>
             <ol>
                 <li>
                     <dt>Taxes:</dt>
-                    <dd><strong>18 % GST Including.</strong></dd>
+                    <dd><strong>18 % GST Extra.</strong></dd>
                 </li>
                 <li>
                     <dt>Payment Terms:</dt>
@@ -245,7 +245,6 @@ tr:nth-child(even) {
                             <li>
                                 The work order and advance must be allowed 15 working Days prior to the date of commencement of work. To arrange the materials and utilities.
                             </li>
-
                             <li>
                                 Kindly ensure the work area to be available on time so that our workmen’s idle and other inconvenience in service can be avoided.
                             </li>
@@ -255,6 +254,7 @@ tr:nth-child(even) {
                 <li>
                     <dt>Water and Electricity:</dt>
                     <dd>Necessary construction water and power required forexecution of our work should be provided free of cost by you.</dd>
+                
                 
             
         </dl>
